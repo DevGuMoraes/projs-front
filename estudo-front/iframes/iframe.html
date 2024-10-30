@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide com iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif ;
+        }
+
+        iframe#tela {
+            height: 300px;
+            width: 100vh;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste com iframes</h1>    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus mollitia quidem rerum alias molestiae nulla debitis ducimus autem facere laboriosam, illo placeat sit eligendi itaque suscipit sunt libero, consectetur ipsa!</p>
+
+    <ul>
+        <li><a href="pag01.html" target="frame">pagina 01</a></li> <!--link direcionado para abrir no iframe com name frame-->
+        <li><a href="pag02.html" target="frame">pagina 02</a></li>
+    </ul>
+
+    <iframe src="pag01.html" frameborder="0" id="tela" name="frame"> <!--name frame para poder identifica-lo no caminho de um link-->
+        <p>infelizmente seu navegador não é compatpível com este iframe</p> <!--Este testo aparece caso o Iframe não carregue conrretamente em algum navegador-->
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt animi necessitatibus qui doloremque. Necessitatibus assumenda tempora perferendis expedita quos mollitia totam quia natus molestiae eius consequuntur quae sint, doloribus nulla.</p>
+</body>
+</html>
