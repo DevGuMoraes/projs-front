@@ -3,6 +3,6 @@
 /* Configurações em retrato - portrait*/
 
 body {
-    background: url(../imagens/cev-portrait.jpg) fixed center bottom;
+    background: url(/estudo-front/media_querie/imagens/cev-portrait.jpg) fixed center bottom;
     background-size: cover;
 }

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Configurações em paisagem - landscape*/
+
+body {
+    background: url(/estudo-front/media_querie/imagens/cev-landscape.jpg) no-repeat fixed left bottom ;
+    background-size: cover;
+}

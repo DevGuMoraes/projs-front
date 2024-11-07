@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries em uma folha de estilo</title>
+    <style>
+        /* declarações gerais */
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: arial, helvetica, sans-serif;
+        }
+
+        html, body {
+            width: 100vw;
+            height: 100vh;
+            background-color: darkblue;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 3px 3px 0px black;
+        }
+        /* declarações retrato */
+        @media screen and (orientation: portrait) {
+            body {
+                background: url(/estudo-front/media_querie/imagens/cev-portrait.jpg) no-repeat fixed left bottom ;
+                background-size: cover;
+            }
+        }
+
+        /* declarações paisagem */
+        @media screen and (orientation: landscape) {
+            body {
+            background: url(/estudo-front/media_querie/imagens/cev-landscape.jpg) no-repeat fixed left bottom ;
+            background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mude a orientação</h1>
+</body>
+</html>
