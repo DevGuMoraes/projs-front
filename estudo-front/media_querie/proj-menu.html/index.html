@@ -6,8 +6,9 @@
     <title>Manu Hamburguer</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> 
     <link rel="stylesheet" href="estilos/geral.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -23,9 +24,7 @@
     </header>
     <main>
         <article>
-            <h1>
-                Testando Media Queries
-            </h1>
+            <h1>Seja bem vindo</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo veritatis qui consequatur debitis ullam saepe, rem, velit repellat rerum mollitia animi dolore, quisquam illum sit voluptates architecto a reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur commodi molestias nam debitis sed, mollitia omnis esse laboriosam.
             </p>
@@ -45,6 +44,15 @@
                 itens.style.display = 'block' /*block*/
             }
         }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
     </script>
 </body>
 </html>
